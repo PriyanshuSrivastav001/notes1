@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: rgb(181, 110, 247);
+  font-family: Arial, sans-serif;
+}
+.main h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+.enter input {
+  height: 2.5rem;
+  width: 100%;
+  max-width: 25rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0.4rem 0.6rem;
+}
+.enter input:hover {
+  background-color: rgb(236, 234, 234);
+}
+.enter button {
+  height: 2.5rem;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(39, 37, 37);
+  cursor: pointer;
+  background-color: rgb(66, 243, 66);
+}
+.enter button:hover {
+  background-color: rgb(11, 202, 11);
+}
+@media (max-width: 768px) {
+  .enter button {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .main h1 {
+    margin-top: 1rem;
+  }
+}
+.div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.new {
+  position: relative;
+  width: 200px;
+  min-height: 120px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  word-wrap: break-word;
+  padding-right: 2.5rem;
+}
+.new span {
+  display: block;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+.new button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.new button:hover {
+  background: rgb(158, 1, 1);
+}
+.text {
+  display: block;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
