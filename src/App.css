@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  color: rgb(226, 226, 8);
+  color: rgb(9, 159, 170);
 }
 .enter {
   display: flex;
@@ -52,10 +52,10 @@ body {
   font-weight: 600;
   color: rgb(39, 37, 37);
   cursor: pointer;
-  background-color: rgb(8, 199, 8);
+  background-color:  rgb(9, 159, 170);
 }
 .enter button:hover {
-  background-color: rgb(10, 221, 10);
+  background-color:  rgb(8, 134, 143);
 }
 @media (max-width: 768px) {
   .enter button {
