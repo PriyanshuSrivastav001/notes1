@@ -14,6 +14,10 @@ function App() {
      const removeTask = (index) => {
     Newadds(adds.filter((_, i) => i !== index));
   };
+  const updateTask=(index)=>{
+    removeTask(index);
+    Newadd(adds[index]);
+  }
     return (
         <>
             <div className="main">
@@ -30,7 +34,8 @@ function App() {
                 {adds.map((t, index) => (
                     <div className='new' key={index}>
                        <span className="text"> {t} </span> 
-                        <button  onClick={() => removeTask(index)}> X </button>
+                       <button className='updt' onClick={()=>updateTask(index)}>U</button>
+                        <button className='dlt' onClick={() => removeTask(index)}> X </button>
                     </div>
                 ))}
             </div>
